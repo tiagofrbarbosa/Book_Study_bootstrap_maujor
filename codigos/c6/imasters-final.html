@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Site de apoio ao livro . Contém informações gerais sobre o livro Bootstrap do Maujor com todos os exemplos disponíveis para download ou consulta online">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, livros de maujor">
+<meta name="author" content="Maurício 'Maujor' Samy Silva">
+<title>Livro Bootstrap Maujor</title>
+<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+<style rel="stylesheet">
+body { background: #f5f5f5 url(imagens/bg-header.png) repeat-x; }
+.barrinha-superior {
+	width: 100%; 
+	height: 4px;
+	background: #369caf;
+	background-image: -o-linear-gradient( to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22 );
+	background-image: -ms-linear-gradient( to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22 );
+	background-image: -webkit-linear-gradient( to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22 );
+	background-image: -moz-linear-gradient( to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22 );
+	background-image: linear-gradient( to right, #369caf 33.33%, #e37900 33.33%, #e37900 66.66%, #af2d22 66.66%, #af2d22 );
+	}
+#nav-superior {
+	background:#fff;
+}
+#nav-superior li a {
+	padding:2px 4px;
+}
+#nav-superior li a:hover {
+	color:#00f;
+}
+#barra1 { background: #64a7b7; padding: 20px}
+.texto-logo {
+	font-size: 120%;
+	color:#fff;
+}
+#barraPrincipal {
+	margin-bottom:20px;
+	background:#7bb3c1!important;
+}
+#barraPrincipal li a {
+	font-size:80%;
+	text-transform:uppercase;
+	padding:5px;
+	color:#fff;
+}
+.destaques img {
+	width:100%;
+}
+.destaques figcaption {
+	font-size:130%;
+	background:#fff;
+	min-height:100px;
+	padding:10px 20px;
+}
+.bc1 { border-bottom: 6px solid #e1734a; }
+.cc1 { display:block; color: #e1734a; }
+.bc2 { border-bottom: 6px solid #8d9b31; }
+.cc2 { display:block; color: #8d9b31; }
+.bc3 { border-bottom: 6px solid #4476ab; }
+.cc3 { display:block; color: #4476ab; }
+.bc4 { border-bottom: 6px solid #9c6496; }
+.cc4 { display:block; color: #9c6496; }
+.noticias {
+	position:relative;
+	background:#333;
+	padding: 10px 0;
+	margin-top:20px;
+}
+.noticias h3 { 
+	font-size:90%;
+	color: #999; 
+	text-transform:uppercase;
+	}
+.noticias a {
+	display:block;
+	font-size:150%;
+	color:#fff;
+}
+.noticias a:hover {
+	color:#ccc;
+}
+a:hover {
+	text-decoration:none;
+}
+a.mais-noticias {
+	width:160px;;
+	font-size:100%;
+	text-align:center;
+	background:#666;
+	position:absolute;
+	left:50%;
+	bottom:-10px;
+	margin-left:-80px;
+	
+}
+@media screen and (max-width:1200px) {
+	body {
+		background-image:none;
+	}
+}
+@media screen and (max-width:992px) {
+	form[role="search"] {
+		float:none!important;
+	}
+}
+
+@media (min-width: 1px) {
+.navbar {
+	min-height:auto;
+	margin:0;
+	border:none;
+	box-shadow:none;
+}
+.navbar li a {
+	color:#333;
+}
+
+#barraPrincipal li ul li a {
+	color:#333;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="barrinha-superior"></div>	
+  
+<div class="row">
+<div class="col-md-12">  
+<nav class="navbar  navbar-default" id="nav-superior">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barraSuperior">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#" data-toggle="collapse" data-target="#barraSuperior">Menu</a>
+          </div>
+      
+          <div class="collapse navbar-collapse" id="barraSuperior">
+            <ul class="nav navbar-nav">
+							<li><a href="#"><img src="imagens/icon-navsup.png" alt="logotipo do site"></a></li>
+              <li><a href="#">Portal</a></li>
+              <li><a href="#">Fórum</a></li>
+              <li><a href="#">7Masters</a></li>
+              <li><a href="#">Ferramentas</a></li>
+              <li><a href="#">Cursos online</a></li>
+              <li><a href="#">Agenda</a></li>
+              <li><a href="#">Revista iMasters</a></li>
+              <li><a href="#">InterCon</a></li>
+	
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" title="facebook"><img src="imagens/facebook.png" alt="facebook"></a></li>
+              <li><a href="#" title="twitter"><img src="imagens/twitter.png" alt="twitter"></a></li>
+              <li><a href="#" title="github"><img src="imagens/github.png" alt="github"></a></li>
+              <li><a href="#" title="linkedin"><img src="imagens/linkedin.png" alt="linkedin"></a></li>
+              <li><a href="#" title="rss"><img src="imagens/rss.png" alt="rss"></a></li>
+              <li><a href="#" title="google plus"><img src="imagens/gplus.png" alt="google plus"></a></li>
+              <li><a href="#">Faça Login / Cadastre-se</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+      </nav>  
+</div>
+</div> <!-- /.row -->
+
+<div class="row">
+<div class="col-lg-12">
+	<div id="barra1"><img src="imagens/branding.png" alt="logo iMasters"> <span class="texto-logo">+ de 11.000 artigos técnicos publicados em 12 anos</span>
+  
+		<form class="navbar-form navbar-right" role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Busca">
+			</div>
+				<button type="submit" class="btn btn-default">OK</button>
+ 			</form>
+  </div> <!-- /#barra1 -->
+
+
+</div>
+</div> <!-- /.row -->
+
+<div class="row">
+<div class="col-lg-12">
+<nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barraPrincipal">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#" data-toggle="collapse" data-target="#barraPrincipal">Menu</a>
+          </div>
+      
+          <div class="collapse navbar-collapse" id="barraPrincipal">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Design &#038; UX<span class="caret"></span></a>
+              	<ul class="dropdown-menu" role="menu">
+             		 <li><a href="#">User Experience</a></li>
+        <li><a href="#">Arquitetura de Informação</a></li>
+        <li><a href="#">Usabilidade</a></li>
+        <li><a href="#">Acessibilidade</a></li>
+        <li><a href="#">Design Responsivo</a></li>
+        <li><a href="#">Teoria do Design</a></li>
+        <li><a href="#">Photoshop</a></li>
+                </ul>
+              </li>          
+              <li class="dropdown">
+              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Front-end<span class="caret"></span></a>
+              	<ul class="dropdown-menu" role="menu">
+             		 <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JQuery</a></li>
+        <li><a href="#">Web Standards</a></li>
+        <li><a href="#">SEO</a></li>
+                </ul>
+              </li>          
+              <li class="dropdown">
+              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dev<span class="caret"></span></a>
+              	<ul class="dropdown-menu" role="menu">
+             		 <li><a href="#">PHP</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">.NET</a></li>
+        <li><a href="#">WordPress</a></li>
+        <li><a href="#">Ruby</a></li>
+        <li><a href="#">Django</a></li>
+        <li><a href="#">Visual Basic</a></li>
+                </ul>
+              </li>          
+              <li class="dropdown">
+              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BD<span class="caret"></span></a>
+              	<ul class="dropdown-menu" role="menu">
+             		 <li><a href="#">Oracle</a></li>
+        <li><a href="#">MySQL</a></li>
+        <li><a href="#">SQL Server</a></li>
+        <li><a href="#">MongoDB</a></li>
+        <li><a href="#2/">DB2</a></li>
+        <li><a href="#">PostgreSQL</a></li>
+                </ul>
+              </li>          
+              <li class="dropdown">
+              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Volkswagen<span class="caret"></span></a>
+              	<ul class="dropdown-menu" role="menu">
+             		 <li><a href="#">Novo Gol</a></li>
+             		 <li><a href="#">Gol G4</a></li>
+             		 <li><a href="#">Fox</a></li>
+             		 <li><a href="#">Crossfox</a></li>
+                 <li class="divider"></li>
+                </ul>
+              </li>          
+              <li class="dropdown">
+              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile<span class="caret"></span></a>
+              	<ul class="dropdown-menu" role="menu">
+             		 <li><a href="#">iPhone &#038; iPad</a></li>
+        <li><a href="#">Android</a></li>
+                </ul>
+              </li>          
+              <li class="dropdown">
+              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Marketing<span class="caret"></span></a>
+              	<ul class="dropdown-menu" role="menu">
+             		 <li><a href="#">Publicidade Online</a></li>
+        <li><a href="#">E-mail Marketing</a></li>
+                </ul>
+              </li>          
+    
+    <li><a href="#">Gestão</a></li>
+    <li><a href="#">APIs</a></li>
+    <li><a href="#">Infra</a></li>
+    <li><a href="#">TECH</a></li>
+    <li><a href="#">E-commerce</a></li>
+    <li><a href="#">Analytics</a></li>
+		<li><a href="#">Mapa do site</a></li>           
+            </ul>
+          </div><!-- /.navbar-collapse -->
+      </nav>
+
+</div>
+</div> <!-- /.row -->
+
+<section class="row destaques">
+<div class="col-sm-3 col-xs-6">    
+	<figure><a href="#" title="Gerencie sites em WP e destaque-se no mercado">
+  <img src="imagens/banner-para-anuncios.jpg" class="img-responsive" alt="banner para anúncios"></a>
+	<figcaption class="bc1"><a href="#" title="Gerencie sites em WP e destaque-se no mercado" class="cc1">Gerencie sites em WP e destaque-se no mercado</a></figcaption>
+	</figure>
+</div>        
+		
+<div class="col-sm-3 col-xs-6">    
+	<figure><a href="#" title="A busca pelo desenvolvimento de um verbo">
+  <img src="imagens/busca.jpg" class="img-responsive" alt="busca"></a>
+	<figcaption class="bc2"><a href="#" title="A busca pelo desenvolvimento de um verbo" class="cc2">A busca pelo desenvolvimento de um verbo</a></figcaption>
+        </figure>
+</div>        
+		
+<div class="col-sm-3 col-xs-6">    
+	<figure><a href="#" title="Twitter API, ElasticSearch e Kibana">
+  <img src="imagens/twitter1.jpg" class="img-responsive" alt="twitter"></a>
+	<figcaption class="bc3"><a href="#" title="Twitter API, ElasticSearch e Kibana" class="cc3">Twitter API, ElasticSearch e Kibana</a></figcaption>
+	</figure>
+</div>        
+		
+<div class="col-sm-3 col-xs-6">	
+<figure><a href="#" title="Building com Phing – Parte 02"><img src="imagens/php.jpg" class="img-responsive" alt="php"></a>
+			<figcaption class="bc4"><a href="#" title="Building com Phing – Parte 02" class="cc4">Building com Phing – Parte 02</a></figcaption>
+		</figure>
+</div>        
+</section> <!-- /.row -->
+</div> <!-- /.container -->
+
+<div class="container-fluid">
+
+<section class="row noticias">
+	<div class="container">
+  <div class="col-sm-3">
+		<h3><span class="cc1">Desenvolvimento</span> / 16 horas atrás</h3>
+        <p><a href="#">Stack Overflow disponibiliza site em português</a></p> 
+	</div>
+
+	<div class="col-sm-3">
+		<h3><span class="cc2">Mercado</span> / 17 horas atrás</h3>
+        <p><a href="#">Vendas de tablets aumentam 50,6% em 2013, mas há sinais de saturação</a></p> 
+	</div>
+
+	<div class="col-sm-3">
+		<h3><span class="cc3">Redes sociais</span> / 18 horas atrás</h3>
+        <p><a href="#">Facebook estreia botão "retweet" no leitor de notícias Paper</a></p> 
+	</div>
+
+	<div class="col-sm-3">
+		<h3><span class="cc4">Tecnologia</span> / 18 horas atrás</h3>
+        <p><a href="#">AMD anuncia primeira CPU baseada em ARM de 64 bits</a></p> 
+	</div>
+	<a href="#" class="mais-noticias">+ noticias</a>
+</div> <!-- /.container -->
+</section> <!-- /.row -->
+
+</div> <!-- /.container-fluid -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+(window.jQuery)||document.write('<script type="text/javascript" src="../bootstrap/js/jquery.min.js"><\/script>');//]]>
+</script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

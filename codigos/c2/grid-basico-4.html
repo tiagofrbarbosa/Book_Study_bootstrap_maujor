@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Site de apoio ao livro . Contém informações gerais sobre o livro Bootstrap do Maujor com todos os exemplos disponíveis para download ou consulta online">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, livros de maujor">
+<meta name="author" content="Maurício 'Maujor' Samy Silva">
+<title>Livro Bootstrap Maujor</title>
+<style>
+body { margin: 0; font: 100% sans-serif; }
+h1 { font-size: 160%; }
+h2 { font-size: 140%; }
+.container { 
+	width: 940px; 
+	margin: 0 auto; 
+	background: #b5b5b5; 
+}
+.row { margin-left: -20px; }
+[class*="span"] {
+	float: left;
+	margin-left: 20px;
+	background: #d5d5d5
+}
+.row:after { 
+	content: "";
+	display: table;
+	line-height: 0;
+	clear:both;
+}
+.span4 { 
+	width: 300px; 
+}
+.span8 { 
+	width: 620px; 
+}
+.span12 { 
+	width: 940px;
+	background: #e5e5e5; 
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Meu primeiro grid - criando rodapé</h1>
+         <div class="row">   
+            <div class="span8"><h2>Coluna principal</h2></div>
+            <div class="span4"><h2>Coluna auxiliar</h2></div>
+         </div> <!-- /.row das colunas -->   
+         <div class="row">   
+            <div class="span12"><h2>Rodapé</h2></div>
+         </div> <!-- /.row do rodapé -->   
+    </div>
+</body>
+</html>
+

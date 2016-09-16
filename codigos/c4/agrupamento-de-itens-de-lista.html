@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Site de apoio ao livro . Contém informações gerais sobre o livro Bootstrap do Maujor com todos os exemplos disponíveis para download ou consulta online">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, livros de maujor">
+<meta name="author" content="Maurício 'Maujor' Samy Silva">
+<title>Livro Bootstrap Maujor</title>
+<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+<style rel="styleshhet">
+h2 {font-size: 20px;}
+</style>
+</head>
+<body>
+<div class="container-fluid">        
+	<div class="row">
+		<div class="col-lg-12 logo"></div>  
+		<div class="col-lg-12">
+    	<h1 class="well text-center">Capítulo 4 &#8212; <small>Componentes</small></h1>
+    </div>  
+  </div>
+</div>
+<div class="container">        
+
+<div class="row">
+<div class="col-md-4">
+	<h4>Agrupamento básico</h4>
+    <ul class="list-group">
+      <li class="list-group-item">Abacate</li>
+      <li class="list-group-item">Carambola</li>
+      <li class="list-group-item">Figo</li>
+      <li class="list-group-item">Uva</li>
+    </ul>
+</div>
+
+<div class="col-md-4">
+	<h4>Itens com "badge" (marcadores)</h4>
+    <ul class="list-group">
+      <li class="list-group-item"> <span class="badge">14</span> Abacate</li>
+      <li class="list-group-item"> <span class="badge">fora de época</span> Carambola</li>
+      <li class="list-group-item"> <span class="badge">345</span> Figo</li>
+      <li class="list-group-item"> <span class="badge">em falta</span>Uva</li>
+    </ul>
+</div>
+
+<div class="col-md-4">
+	<h4>Agrupamento de links</h4>
+    <div class="list-group">
+      <a class="list-group-item active" href="#">Site do Maujor</a>
+      <a class="list-group-item" href="#">Wikipedia português</a>
+      <a class="list-group-item disabled" href="#">Site do W3C</a>
+      <a class="list-group-item" href="#">Google</a>
+    </div>
+</div>
+</div> <!-- /.row -->
+
+<div class="row">
+<div class="col-md-4">
+	<h4>Agrupamento de botões</h4>
+    <div class="list-group">
+      <button type="button" class="list-group-item">Arquivo</button>
+      <button type="button" class="list-group-item">Inserir</button>
+      <button type="button" class="list-group-item">Copiar</button>
+      <button type="button" class="list-group-item">Enviar</button>
+    </div>
+</div>
+
+<div class="col-md-4">
+	<h4>Classes contextuais</h4>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-success">Arquivo enviado!</li>
+      <li class="list-group-item list-group-item-info">Use o formato JPG</li>
+      <li class="list-group-item list-group-item-warning">Está faltando um arquivo</li>
+      <li class="list-group-item list-group-item-danger">Poderá conter virus</li>
+    </ul>
+</div>
+
+<div class="col-md-4">
+	<h4>Lista com conteúdo personalizado</h4>
+    <div class="list-group">
+      <a href="#" class="list-group-item active">
+        <h4 class="list-group-item-heading">A função calc() das CSS</h4>
+        <p class="list-group-item-text">A função calc() das CSS permite que se definam valores CSS com uso de expressões matemáticas, ou seja, o valor adotado para a propriedade é o resultado de uma expressão matemática.</p>
+      </a>
+    </div>
+
+    <div class="list-group">
+			<a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">Especificações do W3C para construção de layouts</h4>
+				<p class="list-group-item-text">Nessa matéria você irá conhecer o andamento das especificações do W3C para construção de layouts</p>
+      </a>
+    </div>
+
+    <div class="list-group">
+			<a href="#" class="list-group-item">
+				<h4 class="list-group-item-heading">A propriedade CSS will-change</h4>
+				<p class="list-group-item-text">Se você já percebeu aquele efeito flash, em navegadores com engine WebKit, ao renderizar certas funcionalidades CSS, especialmente transformações e animações então é muito provável que você já tenha ouvido falar do termo "hardware acceleration.</p>
+      </a>
+    </div>
+
+    <div class="list-group">
+			<a href="#" class="list-group-item">
+				<h4 class="list-group-item-heading">A propriedade CSS3 Background</h4>
+				<p class="list-group-item-text">Tutorial atualizado: A propriedade CSS background define as características do fundo dos elementos HTML, tais como cor e imagens de fundo, definindo ainda, para as imagens, seu posicionamento e repetição.</p>
+      </a>
+    </div>
+</div>
+</div> <!-- /.row -->
+</div> <!-- /.container -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+(window.jQuery)||document.write('<script type="text/javascript" src="../bootstrap/js/jquery.min.js"><\/script>');//]]>
+</script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+<div class="container temas">
+  <h4>Escolha um tema</h4>
+  <p>Temas gratuitos por: <a href="https://bootswatch.com/">Bootswatch</a></p>
+  <button type="button" class="btn btn-default btn-xs" id="default">Default</button>
+	<button type="button" class="btn btn-default btn-xs" id="cyborg">Cyborg</button>
+	<button type="button" class="btn btn-default btn-xs" id="cosmo">Cosmo</button>
+	<button type="button" class="btn btn-default btn-xs" id="superhero">Superhero</button>
+	<button type="button" class="btn btn-default btn-xs" id="readable">Journal</button>
+</div>
+<script type="text/javascript">
+$('#default').on('click', function() { 
+	$('link').remove();
+	$('<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">').insertAfter('title');
+	$('<link href="../bootstrap/css/bootstrap-theme.css" rel="stylesheet">').insertAfter('link');	
+});
+
+
+$('#cyborg').on('click', function() { 
+	$('link').remove();
+	$('<link href="../bootstrap/css/cyborg.css" rel="stylesheet">').insertAfter('title');	
+});
+
+$('#cosmo').on('click', function() { 
+	$('link').remove();
+	$('<link href="../bootstrap/css/cosmo.css" rel="stylesheet">').insertAfter('title');	
+});
+
+$('#superhero').on('click', function() { 
+	$('link').remove();
+	$('<link href="../bootstrap/css/superhero.css" rel="stylesheet">').insertAfter('title');	
+});
+
+$('#readable').on('click', function() { 
+	$('link').remove();
+	$('<link href="../bootstrap/css/journal.css" rel="stylesheet">').insertAfter('title');	
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Site de apoio ao livro . Contém informações gerais sobre o livro Bootstrap do Maujor com todos os exemplos disponíveis para download ou consulta online">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, livros de maujor">
+<meta name="author" content="Maurício 'Maujor' Samy Silva">
+<title>Livro Bootstrap Maujor</title>
+<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="../bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">        
+	<div class="row">
+		<div class="col-lg-12 logo"></div>  
+		<div class="col-lg-12">
+    	<h1 class="well text-center">Capítulo 4 &#8212; <small>Componentes</small></h1>
+    </div>  
+  </div>
+</div>
+<div class="container">        
+
+<div class="row">
+<div class="col-md-5">
+<div class="media"> <!-- mídia à esquerda -->
+	<div class="media-left">
+  <a href="#">
+		<img class="media-object" src="64x64.gif" alt="">
+  </a>
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading">Exemplo de mídia alinhada à esquerda</h4>
+		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+	</div>
+</div>
+
+<div class="media"> <!-- mídia à direita -->
+	<div class="media-body">
+		<h4 class="media-heading">Exemplo de mídia alinhada à direita</h4>
+		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+	</div>
+	<div class="media-right" href="#">
+		<img class="media-object" src="64x64.gif" alt="">
+	</div>
+</div>
+</div>
+
+<div class="col-md-5 col-md-offset-2">
+<div class="media"> <!-- alinhamento vertical no meio -->
+	<div class="media-left media-middle" href="#">
+		<img class="media-object" src="64x64.gif" alt="">
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading">Exemplo de mídia alinhada verticalmente no meio</h4>
+		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+	</div>
+</div>
+<div class="media"> <!-- alinhamento vertical inferior -->
+	<div class="media-left media-bottom" href="#">
+		<img class="media-object" src="64x64.gif" alt="">
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading">Exemplo de mídia alinhada verticalmente embaixo</h4>
+		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+	</div>
+</div>
+
+</div>
+</div> <!-- /.row -->
+</div> <!-- /.container -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+(window.jQuery)||document.write('<script type="text/javascript" src="../bootstrap/js/jquery.min.js"><\/script>');//]]>
+</script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+<div class="container temas">
+  <h4>Escolha um tema</h4>
+  <p>Temas gratuitos por: <a href="https://bootswatch.com/">Bootswatch</a></p>
+  <button type="button" class="btn btn-default btn-xs" id="default">Default</button>
+	<button type="button" class="btn btn-default btn-xs" id="cyborg">Cyborg</button>
+	<button type="button" class="btn btn-default btn-xs" id="cosmo">Cosmo</button>
+	<button type="button" class="btn btn-default btn-xs" id="superhero">Superhero</button>
+	<button type="button" class="btn btn-default btn-xs" id="readable">Journal</button>
+</div>
+<script type="text/javascript">
+$('#default').on('click', function() { 
+	$('link').remove();
+	$('<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">').insertAfter('title');
+	$('<link href="../bootstrap/css/bootstrap-theme.css" rel="stylesheet">').insertAfter('link');	
+});
+
+
+$('#cyborg').on('click', function() { 
+	$('link').remove();
+	$('<link href="../bootstrap/css/cyborg.css" rel="stylesheet">').insertAfter('title');	
+});
+
+$('#cosmo').on('click', function() { 
+	$('link').remove();
+	$('<link href="../bootstrap/css/cosmo.css" rel="stylesheet">').insertAfter('title');	
+});
+
+$('#superhero').on('click', function() { 
+	$('link').remove();
+	$('<link href="../bootstrap/css/superhero.css" rel="stylesheet">').insertAfter('title');	
+});
+
+$('#readable').on('click', function() { 
+	$('link').remove();
+	$('<link href="../bootstrap/css/journal.css" rel="stylesheet">').insertAfter('title');	
+});
+</script>
+
+</body>
+</html>
